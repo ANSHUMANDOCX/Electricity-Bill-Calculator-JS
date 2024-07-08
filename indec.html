@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Electricity bill Calculator</title>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Electricity Bill Calculator</h1>
+    <form id="billForm">
+      <label for="units">Enter your Units consumed(in KWh):</label>
+      <input type="number" id="units" required>
+
+      <label for="load">Enter the load of meter(KVa):</label>
+      <input type="number" id="load" required>
+
+      <button type="button" onclick="calculateBill()">Calculate Bill</button>
+    </form>
+
+    <div id="result"></div>
+  </div>
+  <script src="code.js"></script>
+</body>
+</html>
