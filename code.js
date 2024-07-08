@@ -43,10 +43,13 @@ function calculateBill() {
         }
 
     }else {
-        resultMessage = "Invalid Input (Units need to be positive";
+        resultMessage = "Invalid Input (Units need to be positive)";
     }
     
+    resultMessage += "<br>The Amount is in Rupees";
     resultMessage += "<br>**REBATE AND ADJUSTMENTS ARE NOT CALCULATED AND VALUES ARE ROUNDED UP**";
+    
+
     
     document.getElementById('result').innerHTML = resultMessage;
 }
